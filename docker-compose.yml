@@ -1,0 +1,9 @@
+version: '3'
+services:
+  go:
+    build: ./container
+    ports: 
+      - "3000:3000"
+    volumes:
+     - .:/usr/src/app
+    tty: true
